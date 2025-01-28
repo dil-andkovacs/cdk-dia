@@ -5,7 +5,7 @@
   "scripts": {
     "build-watch": "tsc --watch",
     "build": "tsc",
-    "prepublishOnly": "./scripts/npm-prepare.sh",
+    "prepublishOnly": "bash ./scripts/npm-prepare.sh",
     "test": "tsc && jest"
   },
   "bin": {
@@ -35,8 +35,6 @@
     "yargs": "^16.2.0"
   },
   "devDependencies": {
-    "aws-cdk": "^2.151.0",
-    "aws-cdk-lib": "^2.151.0",
     "@babel/preset-env": "^7.25.3",
     "@babel/preset-typescript": "^7.24.7",
     "@types/glob": "^7.2.0",
@@ -44,10 +42,12 @@
     "@types/jest": "^27.5.2",
     "@types/jest-specific-snapshot": "^0.5.9",
     "@types/lodash": "^4.17.7",
-    "@types/node": "^10.17.60",
+    "@types/node": "^20.0.0",
     "@types/yargs": "^15.0.19",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
+    "aws-cdk": "^2.151.0",
+    "aws-cdk-lib": "^2.151.0",
     "eslint": "^7.32.0",
     "fast-glob": "^3.3.2",
     "glob": "^7.2.3",

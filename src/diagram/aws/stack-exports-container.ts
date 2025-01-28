@@ -1,5 +1,5 @@
 import * as cdk from "../../cdk"
-import {makeUniqueId} from "aws-cdk-lib/core/lib/private/uniqueid"
+import {makeUniqueId} from "./lib/uniqueid"
 import {EdgeTargetStackExport} from "./edge-target"
 
 class StackExport {
